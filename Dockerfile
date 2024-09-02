@@ -28,11 +28,9 @@ COPY --from=builder /app ./
 # Install only production dependencies
 RUN npm install --only=production
 
-# Install additional tools for QA (e.g., testing libraries)
-RUN npm install --save-dev jest supertest
-
 # Expose the port on which the app will run
 EXPOSE 3000
 
 # Start the Next.js application
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
+
