@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Welcome to My Next.js App</h1>
+      <h1>App SuccessFully Deployed :)...Have a Coffee</h1>
       <p>{message}</p>
     </div>
   );
